@@ -1,4 +1,4 @@
-<img width="1024" height="1024" alt="ailofi" src="https://github.com/user-attachments/assets/1ac6aabd-d8e9-4568-a85a-abb3c8ec77b8" />
+<img width="100" height="100" alt="ailofi" src="https://github.com/user-attachments/assets/1ac6aabd-d8e9-4568-a85a-abb3c8ec77b8" />
 <p align="center">
   #FeelScape
 </p>
