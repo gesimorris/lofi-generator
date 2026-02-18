@@ -1,6 +1,5 @@
 """
-Example Training Script
-Use this as a template to train the model with your own data
+This is where the data is trained
 """
 
 import sys
@@ -8,8 +7,7 @@ sys.path.append('backend')
 
 from training_pipeline import run_complete_training_pipeline
 
-# STEP 1: Define your training pairs
-# Replace these with your actual image and MIDI file paths
+
 training_pairs = [
     {'image_path': '/Users/gesimorris-odubo/Downloads/lofi-generator/ImagesAI/00000003_(2).jpg', 'midi_path': '/Users/gesimorris-odubo/Downloads/lofi-generator/MIDI/Cymatics - Eternity MIDI 7 - E Min.mid'},
     {'image_path': '/Users/gesimorris-odubo/Downloads/lofi-generator/ImagesAI/00000002_(3).jpg', 'midi_path': '/Users/gesimorris-odubo/Downloads/lofi-generator/MIDI/Cymatics - Lofi MIDI 1 - C Maj.mid'},
@@ -48,9 +46,8 @@ training_pairs = [
     {'image_path': '/Users/gesimorris-odubo/Downloads/lofi-generator/ImagesAI/00000834_(2).jpg', 'midi_path': '/Users/gesimorris-odubo/Downloads/lofi-generator/MIDI/Cymatics - Eternity MIDI 7 - E Min.mid'},
 ]
 
-# IMPORTANT: You need at least 50 pairs for good results
-# The system will augment these to 1000+ pairs automatically
 
+# Check if we have enough training pairs for a good model. FIX: Need to train way more
 if len(training_pairs) < 10:
     print("⚠️  WARNING: You have fewer than 10 training pairs.")
     print("   For best results, use at least 50 pairs.")
@@ -66,7 +63,7 @@ print(f"{'='*70}")
 print(f"\nTraining with {len(training_pairs)} original pairs")
 print(f"Will augment to 1000+ pairs for better accuracy\n")
 
-# STEP 2: Run the training pipeline
+# Run the training pipeline
 try:
     model, scaler_x, scaler_y, history = run_complete_training_pipeline(
         original_pairs=training_pairs,
@@ -94,7 +91,7 @@ try:
     )
     
     print("\n" + "="*70)
-    print("✅ TRAINING COMPLETED SUCCESSFULLY!")
+    print("TRAINING COMPLETED SUCCESSFULLY!")
     print("="*70)
     print("\nYour model is ready to use!")
     print("Start the backend server with: python backend/app.py")
@@ -103,7 +100,7 @@ try:
     
 except Exception as e:
     print("\n" + "="*70)
-    print("❌ TRAINING FAILED")
+    print("TRAINING FAILED")
     print("="*70)
     print(f"\nError: {e}")
     print("\nPlease check:")
