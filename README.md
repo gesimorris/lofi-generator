@@ -475,7 +475,9 @@ The default General MIDI soundfont produces clean but generic-sounding music. Cr
 ```bash
 # Backend
 cd backend
-python3.12 -m pip install --user fastapi uvicorn numpy opencv-python mido scikit-learn matplotlib midi2audio
+python3 -m venv venv
+source venv/bin/activate
+pip install fastapi uvicorn numpy opencv-python mido scikit-learn matplotlib midi2audio
 brew install fluid-synth
 
 # Frontend
