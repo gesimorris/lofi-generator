@@ -1,8 +1,16 @@
-# FeelScape
+<p align="center">
+<img width="150" height="150" alt="ailofi" src="https://github.com/user-attachments/assets/1ac6aabd-d8e9-4568-a85a-abb3c8ec77b8" />
+</p>
 
-FeelScape is a next-gen LOFI audio generator that aims to capture the mood of an image and produce a LOFI song that reflects that mood. Upload any image and my neural network analyzes its visual features (**colors, contrast, patterns**) to create a matching LOFI beat as either a WAV or MIDI file.
+<h2 align="center"><strong>FeelScape</strong></h2>
 
-**Tech Stack:** React, FastAPI, NumPy, OpenCV, MIDI Processing
+<p align="center">
+FeelScape is a next-gen LOFI audio generator that aims to capture the mood of an image and produce a LOFI song that reflects that mood. Upload any image and my neural network analyzes its visual features (colors, contrast, patterns) to create a matching LOFI beat as either a WAV or MIDI file.
+</p>
+
+<p align="center">
+Tech Stack: React, FastAPI, NumPy, OpenCV, MIDI Processing
+</p>
 
 ---
 
